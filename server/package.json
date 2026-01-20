@@ -1,0 +1,26 @@
+{
+  "name": "task-manager-api",
+  "version": "1.0.0",
+  "description": "Backend API for task management application",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
+
