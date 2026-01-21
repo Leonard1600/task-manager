@@ -3,8 +3,8 @@ import axios from "axios";
 // Configuración de la URL base para la API
 const api = axios.create({
   // Usamos la variable de entorno VITE_API_URL si está definida
-  // Si no está definida, por defecto usamos la URL de localhost (solo para desarrollo)
-  baseURL: import.meta.env.VITE_API_URL || "https://tu-backend-en-produccion.com/api",  // Cambia esto por tu URL en producción
+  // Si no está definida, por defecto usamos la URL de producción
+  baseURL: import.meta.env.VITE_API_URL || "https://task-manager-s2kp.onrender.com/api",  // URL de producción en Render
   timeout: 10000,  // Tiempo de espera para las solicitudes
 });
 
