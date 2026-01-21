@@ -5,8 +5,8 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",  // Solo para desarrollo (local)
-    "start": "node src/index.js"   // Solo para producción (Render)
+    "dev": "node src/index.js",  // Usamos node en lugar de nodemon para producción
+    "start": "node src/index.js"  // Asegúrate de que "start" también esté configurado con node
   },
   "keywords": [],
   "author": "",
@@ -17,11 +17,10 @@
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.1.4"
+    "mongoose": "^9.1.4",
+    "nodemon": "^3.1.11"  // Mueve nodemon a dependencies
   },
-  "devDependencies": {
-    "nodemon": "^3.1.11"
-  }
+  "devDependencies": {}
 }
 
 
