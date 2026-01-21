@@ -18,9 +18,10 @@
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.4",
-    "nodemon": "^3.1.11"  // Mueve nodemon a dependencies
+    "nodemon": "^3.1.11"  // Mover nodemon al final de las dependencias
   },
   "devDependencies": {}
 }
+
 
 
