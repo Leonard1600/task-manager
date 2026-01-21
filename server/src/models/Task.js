@@ -6,7 +6,6 @@ const taskSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      minlength: [3, "El título debe tener al menos 3 caracteres"],
     },
     completed: {
       type: Boolean,
@@ -23,10 +22,5 @@ const taskSchema = new mongoose.Schema(
   }
 );
 
-// Índice para mejorar performance por usuario
-taskSchema.index({ user: 1, createdAt: -1 });
-
-const Task = mongoose.model("Task", taskSchema);
-
-export default Task;
+export default mongoose.model("Task", taskSchema);
 
